@@ -1,3 +1,5 @@
+Copy code
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,12 +7,8 @@
     <title>Fortune Teller</title>
 </head>
 <body>
-    <h1>Welcome to the Fortune Teller</h1>
-    <p>Enter your birth month to receive your fortune:</p>
-    <form action="/home" method="POST">
-        <label for="birth_month">Birth Month:</label>
-        <input type="text" name="birth_month">
-        <button type="submit">Tell my fortune</button>
-    </form>
+    <h1>Hello {{ name }}</h1>
+    <p>Click the link below to receive your fortune:</p>
+    <a href="{{ url_for('fortune') }}">Tell me my fortune</a>
 </body>
 </html>
