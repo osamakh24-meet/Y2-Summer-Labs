@@ -1,0 +1,17 @@
+<html>
+<head>
+   
+    <title>Submit Gossip</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit a Gossip</h1>
+        <form action="{{ url_for('gossip') }}" method="post">
+            <textarea name="gossip" placeholder="Write your gossip here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+    </div>
+</body>
+</html>

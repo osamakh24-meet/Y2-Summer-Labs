@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Gossip Summary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gossip Summary</h1>
+        <ul>
+            {% if gossips %}
+                {% for gossip in gossips.values() %}
+                <li>
+                    {{ gossip['text'] }}
+                </li>
+                {% endfor %}
+            {% else %}
+                <li>No gossips to display.</li>
+            {% endif %}
+        </ul>
+        <a href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+</body>
+</html>
