@@ -1,0 +1,23 @@
+root
+│
+├── users
+│   ├── user1_id
+│   │   ├── email: "user1@example.com"
+│   │   ├── created_at: "timestamp"
+│   ├── user2_id
+│       ├── email: "user2@example.com"
+│       ├── created_at: "timestamp"
+│  
+│
+├── gossips
+    ├── gossip1_id
+    │   ├── text: "First gossip text"
+    │   ├── user_id: "user1_id"
+    │   ├── created_at: "timestamp"
+    ├── gossip2_id
+        ├── text: "Second gossip text"
+        ├── user_id: "user2_id"
+        ├── created_at: "timestamp"
+    
+
+
